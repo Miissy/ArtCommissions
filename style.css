@@ -1,0 +1,212 @@
+/* Commission Art */
+:root {
+    --main-color: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+/* Nav */
+.header.home {
+    box-shadow: 10px 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 12px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+
+.nav-links ul li a:hover {
+    color: #fff;
+    background-color: #000;
+    margin: auto;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Main Content Home */
+/* 
+
+To Do (Maybe start with figuring out wtf- im doing, almost a year later and I'm still lost *sob*)
+> Figure out how to get 80% width about-artist
+> Background color for portrait div
+> Add images for group and sketch home-row
+> Add text background to group and sketch text-box
+> Add buttons under text-boxes
+> Background effect ending with a quote at the end of page
+> Item effect on meet the artist board
+> You can do it!
+
+*/
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* About Artist */
+.about-artist {
+    margin-top: 72px;
+    margin-left: 72px;
+}
+
+.about-artist img {
+    width: 65vh;
+    border-radius: 10px;
+    box-shadow: 10px 5px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Character Portrait */
+/*
+.home-row.portrait {
+    background-color: rgb(231, 83, 83);
+    position: absolute;
+    top: 70%;
+    height: 700px;
+    z-index: -2;
+}
+*/
+
+/* Cards */
+
+.card-group {
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 30vmin;
+    aspect-ratio: 5 / 7;
+    border-radius: 1vmin;
+    position: absolute;
+    background-position: center;
+    background-size: 100%;
+}
+
+.card:nth-child(1) {
+    background-image: url(img/Mau.png);
+    transform: translateX(-10%) rotate(-1deg);
+}
+
+.card:nth-child(2) {
+    background-image: url(img/Aurelia.png);
+    transform: translateX(2deg);
+}
+
+.card:nth-child(3) {
+    background-image: url(img/Yura.png);
+    transform: translateX(-6%) rotate(-3deg);
+}
+
+.card:nth-child(4) {
+    background-image: url(img/Madeline.png);
+    transform: translateX(10%, 3%) rotate(5deg);
+}
+
+.card-group:hover>.card:nth-child(1) {
+    transform: translate(-75%, 16%) rotate(-24deg);
+}
+
+.card-group:hover>.card:nth-child(2) {
+    transform: translate(-25%, 8%) rotate(-8deg);
+}
+
+.card-group:hover>.card:nth-child(3) {
+    transform: translate(25%, 8%) rotate(8deg);
+}
+
+.card-group:hover>.card:nth-child(4) {
+    transform: translate(75%, 16%) rotate(24deg);
+}
+
+/* Card Button */
+.card-btn {
+    margin-top: 8vmin;
+    display: flex;
+}
+
+.card-btn>button {
+    font-size: 2.5vmin;
+    border: 0.4vmin solid rgb(255, 94, 94);
+    border-radius: 100%;
+    color: rgb(255, 94, 94);
+    background-color: transparent;
+    height: 7vmin;
+    width: 7vmin;
+    cursor: pointer;
+}
+
+/*
+.home-content.portrait img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+*/
+
+.home-text-box.portrait {
+    padding: 24px;
+    max-width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    /* Temp - Remove when fixed */
+    margin-bottom: 92px;
+}
+
+@media(max-width: 1000px) {
+    .home-content.portrait img {
+        width: 28%;
+    }
+}
+
+/* Group Mashup */
+
+
+/* Sketches */
+
+/* Quote */
+.home-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
