@@ -53,10 +53,10 @@ nav {
 /* Main Content Home */
 /* 
 
-To Do (Maybe start with figuring out wtf- im doing, almost a year later and I'm still lost *sob*)
+To Do
 > Figure out how to get 80% width about-artist
 > Background color for portrait div
-> Add images for group and sketch home-row
+> Add images for group and sketch home-content
 > Add text background to group and sketch text-box
 > Add buttons under text-boxes
 > Background effect ending with a quote at the end of page
@@ -64,14 +64,6 @@ To Do (Maybe start with figuring out wtf- im doing, almost a year later and I'm 
 > You can do it!
 
 */
-
-.home-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-}
 
 /* About Artist */
 .about-artist {
@@ -85,16 +77,19 @@ To Do (Maybe start with figuring out wtf- im doing, almost a year later and I'm 
     box-shadow: 10px 5px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-/* Character Portrait */
-/*
-.home-row.portrait {
-    background-color: rgb(231, 83, 83);
-    position: absolute;
-    top: 70%;
-    height: 700px;
-    z-index: -2;
+/* Grid */
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: repeat(3, 400px);
 }
-*/
+
+.home-img img {
+    width: 50%;
+}
+
+/* Character Portrait */
 
 /* Cards */
 
@@ -165,15 +160,6 @@ To Do (Maybe start with figuring out wtf- im doing, almost a year later and I'm 
     cursor: pointer;
 }
 
-/*
-.home-content.portrait img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin: 10px;
-}
-*/
-
 .home-text-box.portrait {
     padding: 24px;
     max-width: 400px;
@@ -182,12 +168,6 @@ To Do (Maybe start with figuring out wtf- im doing, almost a year later and I'm 
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
     /* Temp - Remove when fixed */
     margin-bottom: 92px;
-}
-
-@media(max-width: 1000px) {
-    .home-content.portrait img {
-        width: 28%;
-    }
 }
 
 /* Group Mashup */
