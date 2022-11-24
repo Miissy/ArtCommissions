@@ -88,7 +88,9 @@ To Do
 
 .home-box,
 .home-img,
-.card-group {
+.card-group,
+.home-quote,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,16 +189,10 @@ To Do
 
 /* Quote */
 .home-quote {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 30px;
 }
 
 /* Footer */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px;
 }
