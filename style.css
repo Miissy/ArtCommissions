@@ -81,22 +81,22 @@ To Do
 .container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: repeat(3, 400px);
+    grid-template-columns: 550px 550px;
+    grid-template-rows: repeat(3, 500px);
+    overflow: hidden;
 }
 
-.home-img img {
-    width: 50%;
+.home-box,
+.home-img,
+.card-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Character Portrait */
 
 /* Cards */
-
-.card-group {
-    display: grid;
-    place-items: center;
-}
 
 .card {
     width: 30vmin;
@@ -127,6 +127,10 @@ To Do
     transform: translateX(10%, 3%) rotate(5deg);
 }
 
+.card-group:hover>.card {
+    transition: .5s;
+}
+
 .card-group:hover>.card:nth-child(1) {
     transform: translate(-75%, 16%) rotate(-24deg);
 }
@@ -145,7 +149,7 @@ To Do
 
 /* Card Button */
 .card-btn {
-    margin-top: 8vmin;
+    margin-top: 55vmin;
     display: flex;
 }
 
@@ -160,14 +164,20 @@ To Do
     cursor: pointer;
 }
 
-.home-text-box.portrait {
+/* Home Boxes */
+
+.home-text-box.portrait,
+.home-text-box.group,
+.home-text-box.sketches {
     padding: 24px;
-    max-width: 400px;
+    width: 400px;
     height: 200px;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
-    /* Temp - Remove when fixed */
-    margin-bottom: 92px;
+}
+
+.home-img img {
+    width: 100%;
 }
 
 /* Group Mashup */
