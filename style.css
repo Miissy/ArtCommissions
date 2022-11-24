@@ -1,4 +1,17 @@
 /* Commission Art */
+
+/* 
+
+To Do
+> Figure out how to center the cards (c"ತ,_ತ) 
+> Background color for portrait div
+> Add buttons under text-boxes
+> Background effect ending with a quote at the end of page
+> Item effect on meet the artist board
+> You can do it!
+
+*/
+
 :root {
     --main-color: #000;
 }
@@ -51,20 +64,6 @@ nav {
 }
 
 /* Main Content Home */
-/* 
-
-To Do
-> Figure out how to get 80% width about-artist
-> Background color for portrait div
-> Add images for group and sketch home-content
-> Add text background to group and sketch text-box
-> Add buttons under text-boxes
-> Background effect ending with a quote at the end of page
-> Item effect on meet the artist board
-> You can do it!
-
-*/
-
 /* About Artist */
 .about-artist {
     margin-top: 72px;
@@ -81,29 +80,31 @@ To Do
 .container {
     display: grid;
     justify-content: center;
-    grid-template-columns: 550px 550px;
-    grid-template-rows: repeat(3, 500px);
+    grid-template: repeat(3, 500px) / repeat(2, 550px);
     overflow: hidden;
 }
 
+/* @media(max-width: 1000px) {
+    
+} */
+
 .home-box,
 .home-img,
-.card-group,
 .home-quote,
+.home-btn,
+.card-group,
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Character Portrait */
-
 /* Cards */
 
 .card {
-    width: 30vmin;
+    height: 350px;
     aspect-ratio: 5 / 7;
-    border-radius: 1vmin;
+    border-radius: 10px;
     position: absolute;
     background-position: center;
     background-size: 100%;
@@ -151,8 +152,7 @@ footer {
 
 /* Card Button */
 .card-btn {
-    margin-top: 55vmin;
-    display: flex;
+    margin-top: 80%;
 }
 
 .card-btn>button {
@@ -175,15 +175,30 @@ footer {
     width: 400px;
     height: 200px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .home-img img {
+    border-radius: 10px;
     width: 100%;
 }
 
-/* Group Mashup */
+/* Character Portrait */
+.home-btn {
+    margin-top: 40px;
+}
 
+.home-btn>button {
+    font-size: 1em;
+    font-family: inherit;
+    padding: 10px 42px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Group Mashup */
 
 /* Sketches */
 
