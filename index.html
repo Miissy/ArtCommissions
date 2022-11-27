@@ -55,13 +55,13 @@
 
             <div class="home-img portrait">
                 <div class="card-group">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <div class="card" data-index="0" data-status="active"></div>
+                    <div class="card" data-index="1" data-status="unknown"></div>
+                    <div class="card" data-index="2" data-status="unknown"></div>
+                    <div class="card" data-index="3" data-status="unknown"></div>
                 </div>
                 <div class="card-btn">
-                    <button id="heart-btn">
+                    <button id="heart-btn" onclick="handleHeartClick()">
                         <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
@@ -87,7 +87,7 @@
             </div>
 
             <!-- Sketces Section -->
-            <div class="home-box">
+            <div class="home-box sketches">
                 <div class="home-text-box sketches">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aut voluptatibus, cumque
                         quam
@@ -99,6 +99,7 @@
                     <div class="home-btn">
                         <button id="home-btn-sketches">Sketches</button>
                     </div>
+                    <div class="home-text-border"></div>
                 </div>
             </div>
             <div class="home-img sketches">

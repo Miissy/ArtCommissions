@@ -5,7 +5,6 @@
 To Do
 > Figure out how to center the cards (c"ತ,_ತ) 
 > Background color for portrait div
-> Add buttons under text-boxes
 > Background effect ending with a quote at the end of page
 > Item effect on meet the artist board
 > You can do it!
@@ -92,6 +91,7 @@ nav {
 .home-img,
 .home-quote,
 .home-btn,
+.home-text-border,
 .card-group,
 footer {
     display: flex;
@@ -128,6 +128,19 @@ footer {
 .card:nth-child(4) {
     background-image: url(img/Madeline.png);
     transform: translateX(10%, 3%) rotate(5deg);
+}
+
+.card {
+    position: absolute;
+    transition: transform 400ms ease;
+}
+
+.card[data-status="unknown"] {
+    transform: scale(0);
+}
+
+.card[data-status="becoming-active-from-before"] {
+    transform: translateX(50%) scale(0);
 }
 
 .card-group:hover>.card {
@@ -201,6 +214,21 @@ footer {
 /* Group Mashup */
 
 /* Sketches */
+.home-text-box.sketches {
+    position: relative;
+    z-index: 10;
+}
+
+.home-text-border {
+    position: relative;
+    height: 250px;
+    width: 400px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    top: -170%;
+    left: -20%;
+    z-index: -1;
+}
 
 /* Quote */
 .home-quote {
